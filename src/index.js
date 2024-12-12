@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import { DB_NAME } from "./constants.js";
 import connectDB from "./db/index.db.js";
 
+
 dotenv.config({
     path:'./.env'
 })
@@ -10,5 +11,11 @@ dotenv.config({
 // CONNECTDB Async code  hai toh 
 //fn call complete ke baad response aata hai
 // .then   and   .catch se handle krenge
+//multiple   .then allowed
 connectDB()
-.then
+.then(()=>{
+
+})
+.catch((error)=>{
+    console.log("Mongo db connection fail messege from index.js",error);
+})
