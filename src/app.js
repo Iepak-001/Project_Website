@@ -33,4 +33,12 @@ app.use(express.static("public"))
 //secure cookies
 app.use(cookieParser())
 
+//ROUTES LANA HAI
+import userRouter from './routes/user.routes.js'
+
+//Routes declaration
+app.use("/users",userRouter) //userRouter ko control de dega
+
+
+
 export {app}
