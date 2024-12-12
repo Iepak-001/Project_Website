@@ -1,2 +1,1 @@
-const DB_NAME=Deepak_Projects
-export {DB_NAME};
+export const DB_NAME="Deepak_Projects";
