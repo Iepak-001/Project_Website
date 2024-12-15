@@ -19,7 +19,7 @@ app.use(cors({
 
 //JSON file jo recieve ho rha uska limit
 app.use(express.json({
-    limit:"16kb"
+    limit:"64kb"
 }))
 
 // encoded url (deepak%20Kumar) ko accept krana

@@ -4,7 +4,7 @@ class ApiError extends Error{
         //Yaha default value rhega
         statusCode,
         messege="Something went Wrong",
-        stack=[],
+        stack="",
         errors=[]
     ){
         //yaha overwrite krnege upar wala cheez
